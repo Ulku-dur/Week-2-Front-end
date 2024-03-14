@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box; /*sitemizde herhangi değişiklik olsa bile w h sabit kalacak*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(230, 230, 255);
+  font-family: "Oxygen", sans-serif;
+}
+
+#social {
+  background-color: rgb(255, 153, 204);
+  color: rgb(230, 230, 255);
+  height: 65px;
+  width: 100%;
+  position: sticky; /*social bar ın sabit kalmasını sağlar, top 0 pozisyonunda*/
+  top: 0;
+  z-index: 1; /*social bar ın üzerine herhangi içerik gelmesini engeller*/
+  font-size: 20px;
+  text-align: right; /*yazıları ortaladık*/
+  padding: 15px; /*4 bi yandan iç boşluk verdik*/
+}
+
+font {
+  float: left; /*font yani marka ve slogan soldan başlasın*/
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+span {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#social > i {
+  margin-right: 15px;
+}
+
+#social > i:hover {
+  opacity: 0.8;
+}
+
+#container {
+  width: 80%; /* sayfanın %80 i*/
+  margin: auto;
+  height: auto;
+}
+
+header {
+  width: 100%; /*%80 olan containerın tamamını kapla*/
+  height: 250px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  color: rgb(255, 153, 204);
+  font-family: "Oxygen", sans-serif;
+  font-size: 35px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+#headerResim {
+  width: 100%;
+  height: 250px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.8;
+}
+
+#centered {
+  position: absolute; /*header a göre absolute konumlanacak*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  width: 100%; /*containerın tamamını kaplasın*/
+  height: auto;
+  background-color: #f1f1f1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(20, v23, 28, 0.15);
+  margin-top: 15px;
+  overflow: auto; /*overflow yapmazsak section etiketindeki veriler dışarı taşıyor*/
+}
+nav {
+  width: 20%; /*içerisinde bulunduğu etiketin %20 sini kaplasın*/
+  float: left; /*kendisinden sonra gelen içerik yanına gelsin, alt satıra değil*/
+  margin-top: 10px;
+  height: auto;
+}
+nav ul {
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: rgb(255, 153, 204);
+  border-bottom: 1px solid rgb(255, 153, 204);
+  padding-left: 20px;
+  display: block;
+}
+nav li a:hover {
+  color: white;
+  background-color: rgb(255, 153, 204);
+}
+/*icon ile yazı arası boşluk vermelyiz*/
+i {
+  margin-right: 10px;
+}
+main {
+  float: left; /*image aşağı kaymayacak, li lerin yanından devam edecek*/
+  height: auto;
+  width: 80%; /*menüye 20% verdik kalan 80*/
+  padding: 10px;
+}
+/*img arası boşlukları da hesap ederek width i 48 veriyoruz*/
+.content {
+  width: 48%;
+  height: auto;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: rgb(255, 153, 204);
+  box-shadow: 0 2px 8px 2px rgba(20, v23, 28, 0.15);
+  color: #f1f1f1;
+  margin-bottom: 15px;
+}
+/*img küçültme*/
+.pic {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: opacity 0.8s;
+}
+.pic:hover {
+    opacity: 0.6;
+
+}
+h5{
+    margin: 10px;
+    color: #f1f1f1;
+    }
+
+.contentText{
+    margin: 10px;
+    color: #f1f1f1;
+}  
+
+/* btn a tıklanmadan önceki durumu :link*/
+
+.btnGo:link{
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: rgb(255, 153, 204);
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+.btnGo:hover {
+    transform: scale(1.1); /* 1.1 oranında büyütme */
+    transition: transform 0.3s ease; /* Animasyon süresi ve efekti */
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 153, 204);
+    color: #f1f1f1;
+    /*footer ı dikeyde sıralama */
+    line-height: 75px;
+    /*footer ı yatayda sıralama */
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(20, v23, 28, 0.15);
+
+}
+h1 {
+  text-align: center;
+  background-color: rgb(255, 153, 204);
+  color: #f1f1f1;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+h3 {
+  color: rgb(90, 90, 90);
+}
+
+#aboutPic {
+  width: 350px;
+  height: 300px;
+  float: left;
+  border-radius: 10px;
+  margin: 70px;
+  transition: opacity 0.8s;
+}
+
+#aboutPic:hover {
+  opacity: 0.6;
+}
+
+.aboutText {
+  margin-right: 15px;
+  font-size: 20px;
+  font-family: Cambria;
+  text-indent: 40px;
+  color: #494949;
+}
+
+iframe {
+  width: 98%;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px 2px rgba(20, v23, 28, 0.15);
+  margin-left: 10px;
+}
+
+ .section1 {
+  width: 98%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgb(255, 153, 204);
+ }
+
+.form {
+  width: 49%;
+  float: left;
+  height: 380px;
+  border: 1px solid #f1f1f1;
+  margin-right: 10px;
+}
+
+.col25 {
+  width: 25%;
+  float: left;
+  margin-top: 6px;
+}
+
+.col75 {
+  width: 75%;
+  float: left;
+  margin-top: 6px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+}
+
+.row:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+
+input[type=submit] {
+  background-color: #f1f1f1;
+  color: rgb(255, 153, 204);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+}
+
+.address {
+  width: 49%;
+  float: left;
+  height: 380px;
+  border: 1px solid #f1f1f1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.span1 {
+  display: block;
+  font-family: Calibri;
+  margin: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 16px;
+
+}
